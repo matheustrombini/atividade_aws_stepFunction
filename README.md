@@ -36,6 +36,7 @@ O **Workflow Studio** é uma interface visual que permite criar fluxos de trabal
 O **Amazon States Language** é uma linguagem baseada em JSON usada para definir fluxos de trabalho no Step Functions. Ele permite especificar como os estados transitam entre si e incorporar lógica de controle, como loops e condicionais.
 
 Exemplo básico de ASL (json):
+```json
 
 {
   "Comment": "Exemplo de uma Máquina de Estados",
@@ -49,6 +50,7 @@ Exemplo básico de ASL (json):
   }
 } 
 
+```
 
 ## Precificação e Custos
 
@@ -73,6 +75,7 @@ As permissões para usar o AWS Step Functions são gerenciadas através do **AWS
 - O acesso a outros serviços AWS integrados.
 
 ### Exemplo de política de IAM:
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -88,6 +91,7 @@ As permissões para usar o AWS Step Functions são gerenciadas através do **AWS
     }
   ]
 }
+```
 
 ## Conclusão
 
