@@ -37,7 +37,7 @@ O **Amazon States Language** é uma linguagem baseada em JSON usada para definir
 
 Exemplo básico de ASL:
 ```json
-**{
+{
   "Comment": "Exemplo de uma Máquina de Estados",
   "StartAt": "HelloWorld",
   "States": {
@@ -47,22 +47,4 @@ Exemplo básico de ASL:
       "End": true
     }
   }
-}**
-
-Precificação e Custos
-A precificação do AWS Step Functions é baseada em duas métricas principais:
-
-Número de Transições: Cada vez que um estado transita para outro, é contabilizada uma transição.
-Duração da Execução: No caso do Express Workflows, há cobrança adicional pela duração da execução do fluxo de trabalho.
-Modelos de Preços
-Standard Workflows: Ideal para fluxos de trabalho de longa duração com poucas execuções. Exemplo de custo: $0.025 por 1.000 transições.
-Express Workflows: Adequado para execuções rápidas e em alto volume. Exemplo de custo: $1.00 por 1 milhão de invocações e $0.00000417 por GB-segundo de execução.
-Para detalhes específicos de preços, consulte a página de precificação da AWS.
-
-Permissões
-As permissões para usar o AWS Step Functions são gerenciadas através do AWS Identity and Access Management (IAM). As políticas de permissões controlam:
-
-Quem pode criar, modificar ou deletar máquinas de estado.
-Quem pode iniciar ou parar execuções.
-O acesso a outros serviços AWS integrados.
-Exemplo de política de IAM:
+} 
